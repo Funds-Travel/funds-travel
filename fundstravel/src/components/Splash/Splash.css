@@ -8,12 +8,13 @@ font-family: 'Josefin';
 
 .background {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   width: 100vw;
   /*height: 100vh;*/
   background-size: cover;
   overflow: hidden;
   text-align: middle;
+
   color: white;
 }
 
@@ -118,7 +119,7 @@ input {
 }
 
 
-.loginButton {
+.splashButton {
   float: inherit;
   margin-bottom: 1%;
   background-color: #c8bdbd !important;
@@ -126,29 +127,44 @@ input {
 }
 
 
-
+/*
 .joinButton {
   float: inherit;
   margin-bottom: 1%;
   background-color: #c8bdbd!important;
-  color: black
-
-}
+  color: black;
+}*/
 
 h1 {
   font-size: 6.2rem !important;
+  padding-left: 10%;
 }
 
 .nextButton {
   background-image:url('https://cdn4.iconfinder.com/data/icons/essential-app-2/16/down-menu-arrow-botton-64.png') !important;
-  position:absolute;
- z-index:100;
+  position:  absolute;
+ /*z-index:100;*/
+ position: bottom;
  left:50%;
- top:100em;
+ top:98em;
  width:9em;
  height:9em;
  border-radius:50%;
  font-size:0.5em;
  display:block;
  -webkit-animation-delay: 3s;
+}
+
+.homeButton {
+  background-image:url('https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronUpCircle-64.png') !important;
+  position: absolute;
+  left:50%;
+  color: white;
+  width:4.5em;
+  height:4.5em;
+  border-radius:50%;
+  background-color: white;
+  display:block;
+  -webkit-animation-delay: 3s;
+
 }

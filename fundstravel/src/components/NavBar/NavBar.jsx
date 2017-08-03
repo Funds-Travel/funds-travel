@@ -67,6 +67,9 @@ componentWillMount() {
     })
 }
 
+
+
+
 componentDidMount() {
   Modal.defaultProps = {
     actions: [<Button
@@ -81,11 +84,12 @@ componentDidMount() {
 
   render() {
     return (
-      <div className="navBar">
 
+
+        <div className="side-nav fixed  ourNavBar ">
         <h3>Trip Funds</h3>
 
-        <h6>This is my NavBar, there are many like it but this one is mine</h6>
+
 
 
         <Modal
@@ -115,9 +119,7 @@ componentDidMount() {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
+
 
         <h3>Balance: {this.state.balance}</h3>
         <h3>Goal: {this.state.goal}</h3>
@@ -136,8 +138,9 @@ componentDidMount() {
         >
           Sign out
       </button>
+    </div>
 
-      </div>
+
     )
   }
 }

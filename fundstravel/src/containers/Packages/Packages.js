@@ -24,7 +24,7 @@ class Packages extends Component {
       return (
         <div className="allPackagesDiv">
           <span>{myPackages}</span>
-          </div>
+        </div>
       )
     }
 }

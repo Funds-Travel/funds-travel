@@ -10,12 +10,16 @@ class Home extends Component {
 
   render() {
     return (
+    <div className="container">
+      <div className="row">
         <div className='homeDiv'>
           <NavBar />
-          <div className='homePackageDiv'>
+          <div className="offset-l2 col s2 m10 l12">
             <Packages />
           </div>
         </div>
+      </div>
+    </div>
     )
   }
 }

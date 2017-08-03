@@ -31,6 +31,7 @@ class Splash extends Component {
     this.handleConfirm = this.handleConfirm.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.signUp = this.signUp.bind(this);
+    this.scrollToView1 = this.scroll.bind(this, ".view1")
     this.scrollToView2 = this.scroll.bind(this, ".view2")
     this.scrollToView3 = this.scroll.bind(this, ".view3")
 
@@ -108,19 +109,20 @@ signIn() {
 
           <input value={this.state.email}
                 onChange={event => this.setState({email: event.target.value})}
-                className="" placeholder="Username"></input>
+                className="" placeholder="Email"></input>
 
                 <input value={this.state.password}
                   onChange={event => this.setState({password: event.target.value})}
                   className="" placeholder="Password"></input>
 
        <button onClick={() => this.signIn()}
-                className="loginButton">Login</button>
+                className="splashButton">Login</button>
+                <br />
                 <br />
                 <Modal
               	header='Create Account'
               	trigger={
-              		<Button className='joinButton'>Sign Up</Button>
+              		<Button className='btn waves-effect waves-light'>Join!</Button>
               	}>
 
                 <Row>
@@ -181,9 +183,11 @@ Phasellus nisi nisl, tempor feugiat urna a, iaculis placerat turpis. Ut maximus 
 <section>
 
 <div className="view3">
-<h1>Lorem ipsum dolor sit amet, adipiscing elit.</h1>
+<h2>Lorem ipsum dolor sit amet, adipiscing elit.</h2>
 
+<button className="homeButton" onClick={this.scrollToView1}></button>
 </div>
+
 </section>
 
      </div>
